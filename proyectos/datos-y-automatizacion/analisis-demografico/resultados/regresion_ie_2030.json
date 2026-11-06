@@ -1,0 +1,39 @@
+{
+  "years": [
+    2000,
+    2010,
+    2022
+  ],
+  "index": [
+    7.0,
+    11.03,
+    18.63
+  ],
+  "input_note": "IE redondeado a dos decimales; coeficientes y cálculos posteriores sin redondear.",
+  "intercept": 6.544395604395601,
+  "slope": 0.5320879120879124,
+  "r_squared": 0.9849552734778518,
+  "fitted": [
+    6.544395604395601,
+    11.865274725274725,
+    18.250329670329673
+  ],
+  "residuals": [
+    0.45560439560439914,
+    -0.8352747252747257,
+    0.37967032967032566
+  ],
+  "residual_sum_of_squares": 1.0494087912087922,
+  "residual_standard_error": 1.0244065556256423,
+  "degrees_of_freedom": 1,
+  "t_critical": 12.706204736174707,
+  "projection_2030": 22.507032967032973,
+  "confidence_interval_95": [
+    4.690233438099508,
+    40.32383249596644
+  ],
+  "prediction_interval_95": [
+    0.44206260837862743,
+    44.57200332568732
+  ]
+}

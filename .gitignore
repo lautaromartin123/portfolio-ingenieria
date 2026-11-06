@@ -1,0 +1,29 @@
+# Generados y dependencias
+**/bin/
+**/obj/
+**/packages/
+**/node_modules/
+**/.vs/
+**/.next/
+**/.wrangler/
+**/.sites-runtime/
+**/.vinext/
+**/dist/
+**/.venv/
+**/__pycache__/
+*.pyc
+*.user
+*.suo
+*.tsbuildinfo
+*.log
+*.dll
+*.exe
+# Secretos y datos locales
+**/.env
+**/.env.*
+!**/.env.example
+**/appsettings.Local.json
+**/Web.Local.config
+**/*.db
+**/*.sqlite*
+**/backups/

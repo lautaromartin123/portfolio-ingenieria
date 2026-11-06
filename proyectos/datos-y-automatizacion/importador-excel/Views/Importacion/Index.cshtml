@@ -1,0 +1,152 @@
+﻿@model StockCristales.Models.Importacion.ImportacionExcelViewModel
+
+@{
+    ViewData["Title"] = "Importación de cristales";
+}
+
+<h1>Importación de cristales</h1>
+
+<p>
+    Seleccione un archivo Excel para visualizar sus datos antes de importarlos.
+</p>
+
+<form asp-controller="Importacion"
+      asp-action="Index"
+      method="post"
+      enctype="multipart/form-data">
+
+    <div class="mb-3">
+        <label for="archivo" class="form-label">
+            Archivo Excel
+        </label>
+
+        <input type="file"
+               id="archivo"
+               name="archivo"
+               accept=".xlsx"
+               class="form-control" />
+    </div>
+
+    <button type="submit" class="btn btn-primary">
+        Leer archivo
+    </button>
+
+</form>
+
+
+@if (!string.IsNullOrWhiteSpace(Model.MensajeError))
+{
+    <div class="alert alert-danger mt-3">
+        @Model.MensajeError
+    </div>
+}
+
+
+@if (Model.TotalFilas > 0)
+{
+    <hr />
+
+    <h4>Vista previa</h4>
+
+    <p>
+        Filas detectadas: <strong>@Model.TotalFilas</strong>
+    </p>
+
+    <p>
+        Mostrando las primeras @Model.Filas.Count filas.
+    </p>
+
+
+    @if (Model.TiposCristalNoReconocidos.Any())
+    {
+        <div class="alert alert-warning">
+            <strong>Tipos de cristal no reconocidos:</strong>
+
+            <ul>
+                @foreach (var tipo in Model.TiposCristalNoReconocidos)
+                {
+                    <li>@tipo</li>
+                }
+            </ul>
+        </div>
+    }
+
+
+    @if (Model.ColoresNoReconocidos.Any())
+    {
+        <div class="alert alert-warning">
+            <strong>Colores no reconocidos:</strong>
+
+            <ul>
+                @foreach (var color in Model.ColoresNoReconocidos)
+                {
+                    <li>@color</li>
+                }
+            </ul>
+        </div>
+    }
+
+    @if (Model.CantidadSinAnioDesde > 0)
+    {
+        <div class="alert alert-warning">
+            <strong>
+                Filas sin año detectado: @Model.CantidadSinAnioDesde
+            </strong>
+
+            <ul>
+                @foreach (var codigo in Model.CodigosSinAnioDesde)
+                {
+                    <li>@codigo</li>
+                }
+            </ul>
+        </div>
+    }
+
+
+
+
+
+    <div class="table-responsive">
+
+        <table class="table table-bordered table-striped">
+
+            <thead>
+                <tr>
+                    <th>Marca</th>
+                    <th>Código</th>
+                    <th>Modelo</th>
+                    <th>Año desde</th>
+                    <th>Descripción</th>
+                    <th>Tipo de cristal</th>
+                    <th>Color</th>
+
+                </tr>
+            </thead>
+
+            <tbody>
+
+                @foreach (var fila in Model.Filas)
+                {
+                    <tr>
+
+                        <td>@fila.MarcaVehiculo</td>
+                        <td>@fila.Codigo</td>
+                        <td>@fila.ModeloNormalizado</td>
+                        <td>@fila.AnioDesde</td>
+                        <td>@fila.Descripcion</td>
+                        <td>
+                            @string.Join(", ", fila.TiposCristalNormalizados)
+                        </td>
+                        <td>@fila.Color</td>
+
+                    </tr>
+                }
+
+            </tbody>
+
+
+
+        </table>
+
+    </div>
+}
