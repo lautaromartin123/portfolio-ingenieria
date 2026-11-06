@@ -12,3 +12,6 @@ This repository groups academic work (including team projects), personal project
 - [C# coursework](../facultad/programacion-avanzada): three WebForms solutions.
 
 Some samples remain incomplete; see the README in each directory and the [verification notes](VERIFICACION.md).
+
+
+- [Seven Python simulations](../experimentos): each simulation has its own directory and direct source link.

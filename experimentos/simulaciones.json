@@ -1,0 +1,51 @@
+[
+  {
+    "id": "01-movimiento-vertical",
+    "file": "simulacion_simple.py",
+    "name": "Movimiento vertical",
+    "description": "Altura en función del tiempo, velocidad inicial y aceleración gravitatoria.",
+    "concept": "Actualización de velocidad y posición mediante pasos de tiempo. El modelo continúa bajo la altura inicial; no representa una colisión con el suelo."
+  },
+  {
+    "id": "02-rebote",
+    "file": "simulacion_rebote.py",
+    "name": "Pelota con rebote",
+    "description": "Animación de una pelota que pierde energía al rebotar.",
+    "concept": "Detección del contacto con el suelo, inversión de velocidad y coeficiente de rebote."
+  },
+  {
+    "id": "03-gravedad-3d",
+    "file": "simulacion_3d_gravedad.py",
+    "name": "Gravedad y rebote en 3D",
+    "description": "Movimiento sobre tres ejes con gravedad y choque contra un plano.",
+    "concept": "Coordenadas XYZ, actualización de estado y visualización 3D."
+  },
+  {
+    "id": "04-plano-con-malla",
+    "file": "simulacion_plano_einstein.py",
+    "name": "Superficie gravitatoria con malla",
+    "description": "Una masa central representada con una malla tridimensional.",
+    "concept": "Grillas con NumPy, distancia radial y representación wireframe. Es una ilustración matemática, no un modelo de relatividad general."
+  },
+  {
+    "id": "05-plano-superficie",
+    "file": "simulacion_plano_einstein_2.py",
+    "name": "Superficie gravitatoria coloreada",
+    "description": "Versión de una masa central con una superficie continua y mapa de color.",
+    "concept": "Comparación entre malla y superficie sobre el mismo tipo de campo ilustrativo."
+  },
+  {
+    "id": "06-dos-masas",
+    "file": "simulacion_plano_einstein_3.py",
+    "name": "Superficie de dos masas",
+    "description": "Superposición de dos contribuciones sobre un fondo oscuro.",
+    "concept": "Suma de superficies de dos centros. La marca roja original queda en el centro y no ubica las dos fuentes; es una limitación del ejemplo."
+  },
+  {
+    "id": "07-masas-configurables",
+    "file": "simulacion_plano_einstein_4.py",
+    "name": "Dos masas configurables",
+    "description": "Masas, posiciones y suavizado editables en el código.",
+    "concept": "Parámetros, composición de campos y ubicación de las dos marcas según las masas configuradas."
+  }
+]

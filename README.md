@@ -1,46 +1,66 @@
-<div align="center">
-
 # Lautaro · Portfolio de Ingeniería Informática
 
-**Desarrollo web · Datos y automatización · Linux y sistemas**
+Estudiante avanzado de Ingeniería Informática. Desarrollo web, datos y sistemas. Busco mi primera oportunidad en IT.
 
-Proyectos personales y prácticas de la facultad, organizados por área y con su alcance documentado.
+**Elegí una muestra y abrí su código directamente desde las tablas.** Cada proyecto conserva su carpeta y sus instrucciones.
 
-[Proyectos](#proyectos) · [Facultad](#facultad) · [Verificación](docs/VERIFICACION.md) · [English](docs/ABOUT-EN.md)
-
-</div>
-
-## Sobre esta colección
-
-Soy estudiante avanzado de Ingeniería Informática. Estoy construyendo un portfolio para mi primera oportunidad en IT, con interés en desarrollo, datos y resolución de problemas de negocio.
-
-Esta colección reúne trabajos académicos —incluido trabajo grupal—, proyectos personales y experimentos desarrollados con apoyo de herramientas de IA. Cada carpeta explica lo que implementa, cómo explorarlo y sus límites. No todos los proyectos están terminados ni todas sus funcionalidades están verificadas de punta a punta.
+[Proyectos](#proyectos) · [Prácticas de C#](#prácticas-de-c) · [Simulaciones](#siete-simulaciones-python) · [Linux y C](#linux-y-c) · [English](docs/ABOUT-EN.md)
 
 ## Proyectos
 
-| Área | Proyecto | Qué explorar | Estado |
-| --- | --- | --- | --- |
-| Desarrollo web | [Consultorios](proyectos/desarrollo-web/consultorios) | C#, WebForms, entidades, SQL y reglas de turnos | Proyecto académico; integración pendiente de validación |
-| Desarrollo web | [Trading Journal](proyectos/desarrollo-web/trading-journal) | TypeScript, validación, CSV y pruebas | Aplicación personal; lógica y CSV comprobados |
-| Desarrollo web | [Milagros Fabricantes](proyectos/desarrollo-web/milagros-fabricantes) | Caso de estudio de un e-commerce | Resumen público; sin código ni configuración del sistema original |
-| Datos | [Señales de mercado](proyectos/datos-y-automatizacion/senales-mercado) | Python, OHLCV, pandas e indicadores | Prototipos; filtro SOL corregido y comprobado offline |
-| Datos | [Análisis demográfico](proyectos/datos-y-automatizacion/analisis-demografico) | Datos censales, regresión y límites estadísticos | Estudio exploratorio |
-| Automatización | [Importador Excel](proyectos/datos-y-automatizacion/importador-excel) | C#, ClosedXML, normalización y EF Core | Prototipo; vista previa sin importación definitiva |
+| Proyecto y explicación | Tecnologías / área | Abrir el código |
+| --- | --- | --- |
+| [Consultorios](proyectos/desarrollo-web/consultorios) | C# · WebForms · SQL Server | [Pantallas](proyectos/desarrollo-web/consultorios/Consultorios) · [Lógica](proyectos/desarrollo-web/consultorios/BIZ) · [SQL](proyectos/desarrollo-web/consultorios/BD) |
+| [Trading Journal](proyectos/desarrollo-web/trading-journal) | TypeScript · React · reglas y CSV | [Interfaz](proyectos/desarrollo-web/trading-journal/components/journal) · [Cálculos](proyectos/desarrollo-web/trading-journal/lib/domain.ts) · [Pruebas](proyectos/desarrollo-web/trading-journal/tests) |
+| [Milagros Fabricantes](proyectos/desarrollo-web/milagros-fabricantes) | E-commerce · caso de estudio público | Caso de estudio; el código del sistema original se conserva fuera del portfolio |
+| [BTC y SOL](proyectos/datos-y-automatizacion/senales-mercado) | Python · datos de mercado | [Bot BTC](proyectos/datos-y-automatizacion/senales-mercado/src/btc.py) · [Bot SOL](proyectos/datos-y-automatizacion/senales-mercado/src/sol.py) |
+| [Importador Excel](proyectos/datos-y-automatizacion/importador-excel) | C# · ClosedXML · EF Core | [Normalización](proyectos/datos-y-automatizacion/importador-excel/Services/ImportacionExcelService.cs) · [Controlador](proyectos/datos-y-automatizacion/importador-excel/Controllers/ImportacionController.cs) |
+| [Análisis demográfico](proyectos/datos-y-automatizacion/analisis-demografico) | Python · NumPy · regresión exploratoria | [Script](proyectos/datos-y-automatizacion/analisis-demografico/scripts/calcular_regresion_ie.py) · [Datos](proyectos/datos-y-automatizacion/analisis-demografico/datos) |
 
-## Facultad
+## Prácticas de C#
 
-| Colección | Contenido |
+| Solución | Contenido | Abrir el código |
+| --- | --- | --- |
+| [Eventos y estado web](facultad/programacion-avanzada/01-eventos-y-estado-web) | Eventos, Session, ViewState, cookies y Repeater | [Páginas](facultad/programacion-avanzada/01-eventos-y-estado-web/Eeventos) · [BIZ](facultad/programacion-avanzada/01-eventos-y-estado-web/BIZ) |
+| [Consultas y filtros](facultad/programacion-avanzada/02-consultas-y-filtros) | Alumnos por curso y productos por estado | [Páginas](facultad/programacion-avanzada/02-consultas-y-filtros/Avanzada2026) · [BIZ](facultad/programacion-avanzada/02-consultas-y-filtros/BIZ) |
+| [Registro y consultas](facultad/programacion-avanzada/03-registro-y-consultas) | Formularios, imágenes y consultas | [Páginas](facultad/programacion-avanzada/03-registro-y-consultas/Avanzada2026) · [BIZ](facultad/programacion-avanzada/03-registro-y-consultas/BIZ) |
+
+## Siete simulaciones Python
+
+| Simulación | Código completo |
 | --- | --- |
-| [Programación avanzada](facultad/programacion-avanzada) | Tres soluciones C#: eventos y estado web, consultas/filtros y registro/consultas |
-| [Sistemas operativos](facultad/sistemas-operativos) | Entrada/salida en C, descriptores, redirección y apuntes reproducibles de Linux |
-| [Teoría del lenguaje](facultad/teoria-del-lenguaje/automata-jflap) | Autómata finito en JFLAP y casos de prueba |
-| [Experimentos Python](experimentos/simulaciones-python) | Simulaciones numéricas y visualización con Matplotlib |
+| [Movimiento vertical](experimentos/01-movimiento-vertical) | [simulacion_simple.py](experimentos/01-movimiento-vertical/simulacion_simple.py) |
+| [Pelota con rebote](experimentos/02-rebote) | [simulacion_rebote.py](experimentos/02-rebote/simulacion_rebote.py) |
+| [Gravedad y rebote en 3D](experimentos/03-gravedad-3d) | [simulacion_3d_gravedad.py](experimentos/03-gravedad-3d/simulacion_3d_gravedad.py) |
+| [Superficie gravitatoria con malla](experimentos/04-plano-con-malla) | [simulacion_plano_einstein.py](experimentos/04-plano-con-malla/simulacion_plano_einstein.py) |
+| [Superficie gravitatoria coloreada](experimentos/05-plano-superficie) | [simulacion_plano_einstein_2.py](experimentos/05-plano-superficie/simulacion_plano_einstein_2.py) |
+| [Superficie de dos masas](experimentos/06-dos-masas) | [simulacion_plano_einstein_3.py](experimentos/06-dos-masas/simulacion_plano_einstein_3.py) |
+| [Dos masas configurables](experimentos/07-masas-configurables) | [simulacion_plano_einstein_4.py](experimentos/07-masas-configurables/simulacion_plano_einstein_4.py) |
 
-## Cómo recorrerlo
+**[Abrir el menú de las siete simulaciones](experimentos/README.md)**
 
-1. Abrí el README del proyecto que te interese.
-2. Consultá los archivos destacados para ubicar los conceptos.
-3. Revisá instrucciones y dependencias antes de ejecutar.
-4. Consultá los límites y las verificaciones realizadas.
+## Linux y C
 
-Las configuraciones de bases usan ejemplos locales. Las credenciales, respaldos, datos personales e historiales privados no forman parte de esta colección. No hay una licencia global que sustituya derechos de compañeros o dependencias; ver [procedencia](docs/PROCEDENCIA.md).
+| Práctica | Código o guía |
+| --- | --- |
+| Entrada/salida con stdio | [cat_simple.c](facultad/sistemas-operativos/entrada-salida-c/src/cat_simple.c) |
+| Entrada/salida con llamadas al sistema | [cat_syscall.c](facultad/sistemas-operativos/entrada-salida-c/src/cat_syscall.c) |
+| Leer un archivo | [leer_archivo.c](facultad/sistemas-operativos/entrada-salida-c/src/leer_archivo.c) |
+| Redirigir la salida con dup2 | [redirigir_salida.c](facultad/sistemas-operativos/entrada-salida-c/src/redirigir_salida.c) |
+| Comandos y texto | [Guía reproducible](facultad/sistemas-operativos/comandos-y-texto) |
+| Permisos y respaldos | [Guía reproducible](facultad/sistemas-operativos/permisos-y-respaldos) |
+| Autómata finito | [Explicación](facultad/teoria-del-lenguaje/automata-jflap) · [Archivo JFLAP](facultad/teoria-del-lenguaje/automata-jflap/automata.jff) |
+
+## Ejecutar una muestra
+
+En GitHub se puede leer el código y descargar los archivos. Para ejecutar una aplicación o abrir sus gráficos se utiliza la copia local del equipo y las instrucciones del proyecto. En Windows, el análisis demográfico tiene EJECUTAR.cmd y las simulaciones tienen INICIAR.cmd o VER_SIMULACIONES.cmd.
+
+Si todavía no tenés una copia local, usá **Code → Download ZIP** en la portada del repositorio y descomprimí la carpeta completa. Los lanzadores necesitan los demás archivos de su proyecto.
+
+Los paquetes Python se instalan en el entorno virtual de cada colección. No es necesario modificar el Python global administrado por uv.
+
+## Alcance y procedencia
+
+La colección incluye trabajos académicos —algunos grupales—, proyectos personales y experimentos con asistencia de IA. Los README de cada muestra describen su estado. Consultorios y las prácticas mantienen sus límites de integración; el importador Excel es un prototipo y los bots son analizadores de señales. Milagros comparte únicamente un caso de estudio.
+
+[Verificaciones realizadas](docs/VERIFICACION.md) · [Procedencia y contribuciones](docs/PROCEDENCIA.md) · [Cambios de preparación](docs/CAMBIOS-PORTFOLIO.md)

@@ -4,8 +4,8 @@ Dos prototipos Python que consumen velas OHLCV y calculan indicadores con pandas
 
 ## Estructura
 
-- `src/btc.py`: indicadores y señales para BTC.
-- `src/sol.py`: indicadores y señales para SOL, con cálculo teórico de tamaño y avisos opcionales.
+- [Abrir código de BTC](src/btc.py): indicadores y señales para BTC.
+- [Abrir código de SOL](src/sol.py): indicadores y señales para SOL, con cálculo teórico de tamaño y avisos opcionales.
 - `examples/`: dos CSV de velas SOL, de 500 y 800 filas, usados como datos de ejemplo históricos.
 - `tests/test_sol_filter.py`: comprobación offline del filtro de volatilidad.
 
@@ -19,11 +19,15 @@ Esta prueba usa la función real aislada mediante AST y la biblioteca estándar.
 
 ## Preparar dependencias
 
-```sh
+Los comandos se ejecutan dentro de esta carpeta. En Windows, desde CMD:
+
+```bat
 python -m venv .venv
-# Activar el entorno según el sistema operativo.
-python -m pip install -r requirements.txt
+.venv\Scripts\python.exe -m pip install -r requirements.txt
+.venv\Scripts\python.exe src\btc.py
 ```
+
+Para SOL, sustituir src\btc.py por src\sol.py. En Linux/WSL se utiliza .venv/bin/python en lugar de .venv\Scripts\python.exe.
 
 Ejecutar un archivo de `src/` inicia consultas periódicas a datos públicos y puede escribir un CSV local. Telegram está desactivado por defecto y su configuración se obtiene de variables de entorno, sin valores incluidos.
 
