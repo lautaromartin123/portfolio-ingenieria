@@ -4,7 +4,7 @@ Preparación: 6 de noviembre de 2026. Este archivo distingue código revisado, p
 
 | Muestra | Comprobación | Límite |
 | --- | --- | --- |
-| Trading Journal | 29 pruebas de dominio y CSV aprobadas | No comprueba toda la aplicación web ni el proveedor de autenticación |
+| Trading Journal | 29 pruebas de dominio y CSV; arranque web, demo, acceso local y preparación repetible de la base comprobados | No comprueba todos los recorridos web ni autenticación de producción |
 | SOL | Cinco valores de frontera, NaN y 582 filas válidas del CSV | Función aislada, sin soportes/resistencias ni bucle de red |
 | C de WSL | Sintaxis con GCC y advertencias | No es una auditoría de robustez de llamadas al sistema |
 | Python WSL | Análisis sintáctico | No valida todos los modelos ni la interfaz gráfica |

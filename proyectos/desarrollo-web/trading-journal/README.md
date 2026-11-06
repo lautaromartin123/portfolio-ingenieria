@@ -26,10 +26,20 @@ Se comprobó una instalación con `npm ci` en Windows usando Node.js 24.22.2 y n
 
 ## Explorar la aplicación local
 
+En Windows, hacer doble clic en [ABRIR_JOURNAL.cmd](ABRIR_JOURNAL.cmd). El lanzador se ubica en la carpeta del proyecto y prepara las dependencias si falta vinext. La instalación inicial puede tardar varios minutos; dejarla terminar antes de abrir la aplicación.
+
+También se puede iniciar desde la terminal, dentro de esta carpeta:
+
 ```sh
 npm run dev
 ```
 
-La configuración incluida contiene únicamente nombres genéricos de bindings de almacenamiento. Las APIs necesitan una base local con las migraciones de `drizzle/`. El starter usa Cloudflare D1/R2 y un adaptador de autenticación específico de su plataforma; fuera de ella requiere preparar el entorno equivalente. El proveedor simulado del starter debe usarse solo en loopback. No se incluye un despliegue; la ejecución de todos los flujos web sigue pendiente de validación de integración.
+El comando prepara automáticamente las migraciones pendientes en la base de datos local y arranca el servidor. Abrir la dirección que aparece como **Local**, normalmente http://localhost:5173/. Mantener la terminal abierta mientras se utiliza la aplicación; Ctrl+C detiene el servidor.
+
+- **Explorar demo** muestra datos ficticios y funciona sin entrar a una cuenta.
+- En desarrollo local, **Iniciar sesión con ChatGPT** usa una identidad de prueba del starter. Es una sesión local de demostración; no representa una conexión con una cuenta real de ChatGPT.
+- Los datos locales se guardan en `.wrangler/state`, carpeta excluida de Git. `npm run db:local` permite preparar la base por separado; solo aplica migraciones pendientes.
+
+Se comprobó el arranque, la carga de la demo y la lectura de la base tras el acceso local. La configuración incluye nombres genéricos de bindings y una base de desarrollo. El proveedor simulado debe utilizarse solo en loopback. Un despliegue requiere almacenamiento y autenticación reales; los demás recorridos completos siguen pendientes de validación de integración.
 
 El proyecto analiza registros; no envía órdenes ni garantiza resultados de trading. Los datos de ejemplo son de demostración.

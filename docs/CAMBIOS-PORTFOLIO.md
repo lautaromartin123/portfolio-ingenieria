@@ -19,3 +19,10 @@ Las correcciones de preparación no reescriben los proyectos originales de la fa
 - Se agregaron índices en los niveles de proyectos y facultad, y accesos a pantallas, lógica, scripts y pruebas.
 - Los ejemplos de instalación Python usan entornos virtuales explícitos para evitar modificar un intérprete administrado por uv.
 - Los lanzadores de Windows se ubican en la carpeta correcta antes de ejecutar, y las simulaciones comparten un menú de selección.
+
+## Arranque local del diario de trading
+
+- Se incorporó la hoja de estilos shadcn que faltaba en la copia, con su licencia.
+- El inicio prepara automáticamente las migraciones pendientes de D1 en almacenamiento local.
+- Se agregó ABRIR_JOURNAL.cmd y se comprobaron el arranque web, la demo y el acceso a la base con la identidad local de prueba.
+- La auditoría de dependencias informó alertas que necesitan revisión específica. Las pruebas funcionales y el arranque no sustituyen esa revisión.
