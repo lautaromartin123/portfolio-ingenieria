@@ -8,6 +8,7 @@ This repository groups academic work (including team projects), personal project
 - [Trading journal](../proyectos/desarrollo-web/trading-journal): TypeScript domain rules, CSV and tests.
 - [E-commerce case study](../proyectos/desarrollo-web/milagros-fabricantes): public overview only.
 - [Python market signals](../proyectos/datos-y-automatizacion/senales-mercado): data ingestion and indicator prototypes.
+- [Boa Vista population aging study](../proyectos/datos-y-automatizacion/analisis-demografico): academic research in Spanish, available as a Word document; Python regression files are supporting material.
 - [Linux / C lab](../facultad/sistemas-operativos): file descriptors, system calls and output redirection.
 - [C# coursework](../facultad/programacion-avanzada): three WebForms solutions.
 

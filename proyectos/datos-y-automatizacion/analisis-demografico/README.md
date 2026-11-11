@@ -1,35 +1,31 @@
-# Análisis demográfico de Boa Vista
+# Estudio del envejecimiento poblacional de Boa Vista
 
-Exploración de la estructura por edades del municipio de Boa Vista (Brasil), usando datos agregados de los censos de 2000, 2010 y 2022 del IBGE.
+Trabajo académico de investigación sobre la estructura por edades y el envejecimiento poblacional de Boa Vista, Brasil. Compara los censos de 2000, 2010 y 2022 del IBGE e incorpora un análisis socioeconómico.
 
-- [Fuentes y método](datos/boa-vista-censos-2000-2010-2022.md).
-- [Código de regresión](scripts/calcular_regresion_ie.py).
-- [Resultado](resultados/regresion_ie_2030.json).
+## Descargar el estudio
 
-## Ejecutar en Windows
+**[Descargar el estudio completo en Word (.docx)](https://github.com/lautaromartin123/portfolio-ingenieria/raw/refs/heads/main/proyectos/datos-y-automatizacion/analisis-demografico/Estudio_envejecimiento_poblacional_Boa_Vista.docx)**
 
-Requiere Python 3.12 o posterior con acceso desde la terminal. Después de instalarlo, cerrar y volver a abrir la terminal. La preparación local se comprobó con Python 3.14.10 y un entorno virtual propio del proyecto.
+El enlace descarga el documento directamente. Después, abrilo con Word o un lector compatible con `.docx`. No necesitás instalar Python ni descargar todo el portfolio para leerlo.
 
-Abrir la carpeta de este proyecto y hacer doble clic en **EJECUTAR.cmd**. El archivo entra en la carpeta correcta, crea un entorno `.venv`, instala NumPy si falta y ejecuta el análisis. El resultado se guarda en `resultados/regresion_ie_2030.json`.
+Se conserva el contenido del documento original «TP ENVEJECIMIENTO POBLACION BOA VISTA», exportado a Word.
 
-También se puede ejecutar desde CMD, estando en esta carpeta:
+## Contenido del trabajo
 
-```bat
-python -m venv .venv
-.venv\Scripts\python.exe -m pip install -r requirements.txt
-.venv\Scripts\python.exe scripts\calcular_regresion_ie.py
-```
+- Marco teórico, grupos de edad, fuentes y criterios de comparación.
+- Evolución del índice de envejecimiento entre 2000 y 2022.
+- Media, mediana, moda, desvío estándar y coeficiente de variación.
+- Regresión lineal y proyección exploratoria a 2030, con intervalos de confianza y predicción.
+- Análisis socioeconómico: atención sanitaria, apoyo económico, migración y población de 15 a 64 años.
+- Conclusiones y fuentes consultadas.
 
-Si Windows dice que no encontró Python y ofrece Microsoft Store, el comando está resolviendo al acceso directo de la tienda. Comprobar `python --version` en una terminal nueva y revisar que la instalación preceda al acceso de Microsoft Store en PATH. No basta con copiar el comando desde cualquier carpeta porque `requirements.txt` pertenece a este proyecto. Las dependencias se instalan dentro de `.venv`, también al usar Python administrado por uv.
+## Material auxiliar
 
-## Linux / WSL
+El documento es la entrega principal. Estos archivos acompañan algunos de sus cálculos:
 
-Desde esta carpeta, con Python 3 y el módulo `venv` disponibles:
+- [Datos y método](datos/boa-vista-censos-2000-2010-2022.md).
+- [Script de regresión](scripts/calcular_regresion_ie.py).
+- [Resultado del cálculo](resultados/regresion_ie_2030.json).
+- [Instrucciones para reproducir el cálculo en Python](CALCULOS_AUXILIARES.md).
 
-```sh
-python3 -m venv .venv
-.venv/bin/python -m pip install -r requirements.txt
-.venv/bin/python scripts/calcular_regresion_ie.py
-```
-
-La regresión usa tres observaciones, índices redondeados y un grado de libertad residual. La proyección y sus intervalos son exploratorios; no constituyen un modelo predictivo robusto ni una explicación causal. Los datos son agregados públicos, no registros individuales. Fuentes, universo e intervalos temporales están documentados.
+[Volver al portfolio](../../../README.md)

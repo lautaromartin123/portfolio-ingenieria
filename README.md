@@ -2,9 +2,9 @@
 
 Estudiante avanzado de Ingeniería Informática. Desarrollo web, datos y sistemas. Busco mi primera oportunidad en IT.
 
-**Elegí una muestra y abrí su código directamente desde las tablas.** Cada proyecto conserva su carpeta y sus instrucciones.
+**Elegí una muestra para ver su código o descargar el estudio académico.** Cada trabajo conserva su carpeta y sus instrucciones.
 
-[Proyectos](#proyectos) · [Prácticas de C#](#prácticas-de-c) · [Simulaciones](#siete-simulaciones-python) · [Linux y C](#linux-y-c) · [English](docs/ABOUT-EN.md)
+[Proyectos](#proyectos) · [Estudio académico](#estudio-académico) · [Prácticas de C#](#prácticas-de-c) · [Simulaciones](#siete-simulaciones-python) · [Linux y C](#linux-y-c) · [English](docs/ABOUT-EN.md)
 
 ## Proyectos
 
@@ -15,7 +15,12 @@ Estudiante avanzado de Ingeniería Informática. Desarrollo web, datos y sistema
 | [Milagros Fabricantes](proyectos/desarrollo-web/milagros-fabricantes) | E-commerce · caso de estudio público | Caso de estudio; el código del sistema original se conserva fuera del portfolio |
 | [BTC y SOL](proyectos/datos-y-automatizacion/senales-mercado) | Python · datos de mercado | [Bot BTC](proyectos/datos-y-automatizacion/senales-mercado/src/btc.py) · [Bot SOL](proyectos/datos-y-automatizacion/senales-mercado/src/sol.py) |
 | [Importador Excel](proyectos/datos-y-automatizacion/importador-excel) | C# · ClosedXML · EF Core | [Normalización](proyectos/datos-y-automatizacion/importador-excel/Services/ImportacionExcelService.cs) · [Controlador](proyectos/datos-y-automatizacion/importador-excel/Controllers/ImportacionController.cs) |
-| [Análisis demográfico](proyectos/datos-y-automatizacion/analisis-demografico) | Python · NumPy · regresión exploratoria | [Script](proyectos/datos-y-automatizacion/analisis-demografico/scripts/calcular_regresion_ie.py) · [Datos](proyectos/datos-y-automatizacion/analisis-demografico/datos) |
+
+## Estudio académico
+
+**[Envejecimiento poblacional de Boa Vista](proyectos/datos-y-automatizacion/analisis-demografico)**: investigación con datos censales del IBGE de 2000, 2010 y 2022, análisis estadístico y contexto socioeconómico.
+
+**[Descargar el estudio completo en Word (.docx)](https://github.com/lautaromartin123/portfolio-ingenieria/raw/refs/heads/main/proyectos/datos-y-automatizacion/analisis-demografico/Estudio_envejecimiento_poblacional_Boa_Vista.docx)**. Se puede leer directamente en Word; el script Python de esa carpeta es material auxiliar de cálculo.
 
 ## Prácticas de C#
 
@@ -53,7 +58,7 @@ Estudiante avanzado de Ingeniería Informática. Desarrollo web, datos y sistema
 
 ## Ejecutar una muestra
 
-En GitHub se puede leer el código y descargar los archivos. Para ejecutar una aplicación o abrir sus gráficos se utiliza la copia local del equipo y las instrucciones del proyecto. En Windows, el análisis demográfico tiene EJECUTAR.cmd y las simulaciones tienen INICIAR.cmd o VER_SIMULACIONES.cmd.
+En GitHub se puede leer el código y descargar los archivos. Para ejecutar una aplicación o abrir sus gráficos se utiliza la copia local del equipo y las instrucciones del proyecto. En Windows, las simulaciones tienen INICIAR.cmd o VER_SIMULACIONES.cmd. El estudio de Boa Vista se descarga con su enlace directo a Word.
 
 Si todavía no tenés una copia local, usá **Code → Download ZIP** en la portada del repositorio y descomprimí la carpeta completa. Los lanzadores necesitan los demás archivos de su proyecto.
 
